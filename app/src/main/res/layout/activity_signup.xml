@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SignupActivity" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="365dp"
+        android:background="@drawable/top_background2"
+        android:contentDescription="topbackground" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:layout_marginBottom="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvCreateAccount"
+            android:layout_marginBottom="14dp"
+            android:text="Create\nAccount"
+            android:textSize="56sp"
+            android:textColor="#3b5998"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            android:drawableStart="@drawable/name"
+            android:drawablePadding="14dp"
+            android:hint="Name"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            android:drawableStart="@drawable/email"
+            android:drawablePadding="14dp"
+            android:hint="Email"
+            android:importantForAutofill="no"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            android:drawableStart="@drawable/password"
+            android:drawablePadding="14dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:importantForAutofill="no"
+            android:minHeight="48dp" />
+
+        <ImageButton
+            android:id="@+id/btnRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginBottom="14dp"
+            android:background="@drawable/btn_arrow2"
+            android:importantForAccessibility="no" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recoveryPassword"
+            android:layout_marginBottom="14dp"
+            android:text="Forget your password? Recovery it"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#3b5998"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+</LinearLayout>
